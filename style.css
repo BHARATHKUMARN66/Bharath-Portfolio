@@ -1,0 +1,364 @@
+/* ===============================
+   RESET & GLOBAL FONT
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ===============================
+   BACKGROUND OVERLAY (LIGHTENED)
+================================ */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(2, 6, 23, 0.28);
+    z-index: -1;
+}
+
+/* ===============================
+   FULL CYBER BACKGROUND
+================================ */
+body {
+    background:
+        linear-gradient(
+            rgba(2, 6, 23, 0.06),
+            rgba(2, 6, 23, 0.18)
+        ),
+        url("assets/bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #e5e7eb;
+    line-height: 1.75;
+}
+
+/* ===============================
+   LAYOUT CONTAINER
+================================ */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 22px;
+}
+
+/* ===============================
+   NAVBAR
+================================ */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(2, 6, 23, 0.8);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px);
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+.logo {
+    color: #34f5a1;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 26px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #d1d5db;
+    font-size: 14px;
+    transition: color 0.25s;
+}
+
+.navbar a:hover {
+    color: #34f5a1;
+}
+
+/* ===============================
+   HERO SECTION
+================================ */
+.hero {
+    padding: 120px 0 100px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+    color: #34f5a1;
+}
+
+.role {
+    margin: 14px 0;
+    font-size: 16px;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+.tagline {
+    color: #9ca3af;
+    max-width: 520px;
+    font-size: 15.5px;
+}
+
+/* ===============================
+   HERO BUTTONS
+================================ */
+.hero-btns {
+    margin-top: 34px;
+    display: flex;
+    gap: 16px;
+}
+
+.btn {
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13.8px;
+    transition: 0.25s;
+}
+
+.primary {
+    background: #34f5a1;
+    color: #022c22;
+}
+
+.primary:hover {
+    background: #2eea8c;
+}
+
+.outline {
+    border: 1px solid rgba(52,245,161,0.65);
+    color: #34f5a1;
+}
+
+.outline:hover {
+    background: rgba(52,245,161,0.12);
+}
+
+/* ===============================
+   PROFILE IMAGE (BLENDED)
+================================ */
+.profile-frame {
+    width: 320px;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    background: rgba(0,0,0,0.45);
+    box-shadow: 0 0 26px rgba(52,245,161,0.16);
+}
+
+.profile-frame::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.08),
+        rgba(0,0,0,0.75)
+    );
+}
+
+.profile-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    filter: contrast(104%) brightness(97%) saturate(95%);
+}
+
+/* ===============================
+   SECTIONS
+================================ */
+.section {
+    padding: 85px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 26px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    color: #34f5a1;
+}
+
+p {
+    font-size: 15.3px;
+    color: #d1d5db;
+}
+
+/* ===============================
+   GRID SYSTEM
+================================ */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 26px;
+}
+
+/* ===============================
+   CARDS (IMPROVED HIERARCHY)
+================================ */
+.card {
+    position: relative;
+    background: rgba(2, 6, 23, 0.9);
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 26px;
+    border-radius: 14px;
+    transition: 0.3s ease;
+}
+
+/* Subtle left accent */
+.card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    bottom: 12px;
+    width: 3px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(52,245,161,0.6),
+        transparent
+    );
+    opacity: 0.75;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 15.6px;
+    font-weight: 600;
+    color: #e5e7eb;
+}
+
+/* Main description */
+.card p {
+    font-size: 14.4px;
+    line-height: 1.6;
+    color: #d1d5db;
+    margin-bottom: 10px;
+}
+
+/* Supporting paragraph */
+.card p + p {
+    font-size: 13.6px;
+    color: #9ca3af;
+}
+
+/* Tech stack / meta */
+.card span {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+/* GitHub link */
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #34f5a1;
+    text-decoration: none;
+}
+
+.card a:hover {
+    opacity: 0.85;
+}
+
+/* Hover glow (projects only) */
+.glow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(52,245,161,0.25);
+}
+
+/* ===============================
+   EXPERIENCE CARDS
+================================ */
+.wide {
+    background: rgba(2, 6, 23, 0.92);
+    padding: 30px;
+    margin-bottom: 22px;
+}
+
+.wide h3 {
+    margin-bottom: 12px;
+    color: #e5e7eb;
+}
+
+/* ===============================
+   CONTACT
+================================ */
+#contact p {
+    margin-bottom: 10px;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 13.5px;
+    color: #9ca3af;
+}
+
+/* ===============================
+   MOBILE OPTIMIZATION
+================================ */
+@media (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-btns {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .profile-frame {
+        margin: 40px auto 0;
+        width: 260px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+}
