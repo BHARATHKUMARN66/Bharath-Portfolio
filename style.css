@@ -28,7 +28,7 @@ body {
             rgba(2, 6, 23, 0.06),
             rgba(2, 6, 23, 0.18)
         ),
-        url("assets/bg.png");
+        url("bg.png");
 
     background-size: cover;
     background-position: center;
@@ -362,3 +362,4 @@ footer {
         background-attachment: scroll;
     }
 }
+
