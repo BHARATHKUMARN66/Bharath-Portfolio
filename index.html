@@ -2,227 +2,225 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bharathkumar N - Cybersecurity undergraduate portfolio.">
     <title>Bharathkumar N | Cybersecurity Portfolio</title>
+
+    <link rel="preload" as="image" href="assets/bg.webp">
+    <link rel="preload" as="image" href="assets/profile.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="bg-layer"></div>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="container nav-flex">
-        <h2 class="logo">Bharath</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
-<!-- HERO -->
-<header class="hero">
-    <div class="container hero-grid">
-        <div>
-            <h1>Bharathkumar N</h1>
-            <p class="role">Computer Science (Cybersecurity) Student</p>
-            <p class="tagline">
-                Aspiring cybersecurity professional with a strong interest in
-                network security, ethical hacking, and cybercrime investigation.
-                Focused on learning how real-world systems are monitored,
-                analyzed, and protected.
-            </p>
-
-            <div class="hero-btns">
-                <a href="#projects" class="btn primary">View Projects</a>
-                <a href="resume.pdf" class="btn outline" download>Download Resume</a>
-            </div>
-        </div>
-
-        <div class="hero-visual">
-            <div class="profile-frame">
-                <img src="profile.png" alt="Bharathkumar N">
-            </div>
-        </div>
+<header class="site-header">
+    <div class="container nav-wrap">
+        <a href="#home" class="brand">Bharath<span>.sec</span></a>
+        <nav aria-label="Primary navigation">
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#credentials">Credentials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="resume.pdf" class="btn btn-outline" download>Download CV</a>
     </div>
 </header>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>
-            I am a Computer Science student specializing in Cybersecurity with a
-            strong curiosity for understanding how systems, networks, and digital
-            assets are protected from modern cyber threats.
-        </p>
-        <p>
-            Through academic learning, personal projects, and internship exposure,
-            I have gained practical familiarity with Linux environments,
-            networking fundamentals, and commonly used security tools.
-        </p>
-        <p>
-            I am particularly interested in security monitoring, threat detection,
-            and cybercrime investigation, and I aim to build a strong foundation
-            by combining theory with hands-on experimentation.
-        </p>
-    </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section dark">
-    <div class="container">
-        <h2>Skills</h2>
-
-        <div class="grid">
-            <div class="card">
-                <h3>Programming & Scripting</h3>
-                <p>
-                    Comfortable using Python for automation, data handling,
-                    and developing small security-focused utilities.
+<main id="home">
+    <section class="hero section">
+        <div class="container hero-grid">
+            <div class="hero-copy">
+                <p class="kicker">Professional Portfolio</p>
+                <h1>Bharathkumar N</h1>
+                <p class="role">CSE (Cybersecurity) Undergraduate</p>
+                <p class="lead">
+                    Focused on <span class="kw-green">network security</span>, <span class="kw-blue">threat detection</span>,
+                    and <span class="kw-green">SOC monitoring</span> using Python, Linux, DNS analysis, and service enumeration.
+                    Seeking SOC Analyst or Detection Engineering opportunities.
                 </p>
+                <div class="hero-tags" aria-label="Core focus areas">
+                    <span class="tag">Threat Monitoring</span>
+                    <span class="tag">Network Security</span>
+                    <span class="tag">Linux</span>
+                    <span class="tag">Incident Response</span>
+                </div>
+                <p class="meta-line">Avinashi, Tamil Nadu | bharathkumarnatarajan6@gmail.com | +91 9344128641 | LinkedIn</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-ghost">Contact Me</a>
+                </div>
             </div>
-
-            <div class="card">
-                <h3>System & Network Fundamentals</h3>
-                <p>
-                    Solid understanding of Linux systems, TCP/IP,
-                    DNS, ports, and basic network communication concepts.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Security Tools Exposure</h3>
-                <p>
-                    Practical exposure to industry-standard tools used
-                    for scanning, reconnaissance, and security analysis.
-                </p>
-                <p><strong>Tools:</strong> Nmap, Burp Suite, Metasploit, WhatWeb</p>
-            </div>
-
-            <div class="card">
-                <h3>Security Concepts</h3>
-                <p>
-                    Familiar with vulnerability scanning, reconnaissance,
-                    ethical hacking fundamentals, logging, and alerting mechanisms.
-                </p>
+            <div class="hero-image-wrap">
+                <img src="assets/profile.png" alt="Bharathkumar N" class="hero-image" loading="lazy">
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-    <div class="container">
-        <h2>Projects</h2>
-
-        <div class="grid">
-            <div class="card glow">
-                <h3>PortGuardian – Port Monitoring Tool</h3>
-                <p>
-                    A Python-based monitoring tool designed to track open ports
-                    on a system and identify unexpected or unauthorized changes.
-                </p>
-                <p>
-                    Includes timestamped logging and alert generation to improve
-                    visibility into potential security risks caused by
-                    misconfigurations or unauthorized access.
-                </p>
-                <span>Python · Networking · Security Monitoring</span>
-                <span>
-                    <a href="https://github.com/yourusername/portguardian" target="_blank">
-                        View on GitHub
-                    </a>
-                </span>
-            </div>
-
-            <div class="card glow">
-                <h3>DNS Record Finder for Bug Bounty</h3>
-                <p>
-                    A reconnaissance-focused tool that collects DNS records
-                    such as A, MX, TXT, and CNAME to support early-stage
-                    security assessments.
-                </p>
-                <p>
-                    Helps identify domain configurations and technologies,
-                    assisting in understanding the target’s attack surface.
-                </p>
-                <span>Python · DNS · Reconnaissance</span>
-                <span>
-                    <a href="https://github.com/yourusername/dns-record-finder" target="_blank">
-                        View on GitHub
-                    </a>
-                </span>
-            </div>
-
-            <div class="card glow">
-                <h3>CyberSentinel – Monitoring System</h3>
-                <p>
-                    A basic monitoring system developed to observe network and
-                    application-level signals for detecting exposed services
-                    and abnormal behavior.
-                </p>
-                <p>
-                    Strengthened my understanding of how monitoring and detection
-                    contribute to infrastructure security.
-                </p>
-                <span>Python · Monitoring · Security Analysis</span>
-                <span>
-                    <a href="https://github.com/yourusername/cybersentinel" target="_blank">
-                        View on GitHub
-                    </a>
-                </span>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About</h2>
+            <div class="grid two-col about-grid">
+                <article class="panel">
+                    <p>
+                        Cybersecurity engineering student with strong fundamentals in
+                        <span class="kw-blue">TCP/IP</span>, <span class="kw-green">vulnerability assessment</span>, and
+                        <span class="kw-blue">Linux CLI</span>. Practical exposure in monitoring and investigation workflows.
+                    </p>
+                </article>
+                <article class="panel mini-list">
+                    <h3>Education</h3>
+                    <p><strong>Dr. N.G.P. Institute of Technology</strong></p>
+                    <p>B.E. CSE (Cybersecurity), 2023-2027</p>
+                    <p>CGPA: 8.42 | HSC: 88.3%</p>
+                </article>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="section dark">
-    <div class="container">
-        <h2>Experience</h2>
-
-        <div class="card wide">
-            <h3>Cybersecurity Intern – Hackup Technologies</h3>
-            <p>
-                Assisted in vulnerability scanning and network security analysis
-                while learning how real-world security assessments are performed.
-            </p>
-            <p>
-                Gained exposure to professional reporting practices and
-                cybersecurity workflows used in industry environments.
-            </p>
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="grid two-col">
+                <article class="panel skill-card">
+                    <h3><i data-lucide="code-2"></i> Languages</h3>
+                    <p>Python, Java, SQL</p>
+                </article>
+                <article class="panel skill-card">
+                    <h3><i data-lucide="shield"></i> Security</h3>
+                    <p>Vulnerability Assessment, Log Analysis, Threat Detection, Incident Triage</p>
+                </article>
+                <article class="panel skill-card">
+                    <h3><i data-lucide="network"></i> Networking</h3>
+                    <p>Linux (CLI), TCP/IP, DNS, Ports & Services, Traffic Analysis</p>
+                </article>
+                <article class="panel skill-card">
+                    <h3><i data-lucide="wrench"></i> Tools</h3>
+                    <p>Nmap, Burp Suite, Metasploit, WhatWeb, Wireshark</p>
+                </article>
+            </div>
         </div>
+    </section>
 
-        <div class="card wide">
-            <h3>Cybercrime Investigation Intern – Cybercrime Unit</h3>
-            <p>
-                Supported cybercrime investigations by assisting with digital
-                fund tracking, domain monitoring, and case analysis activities.
-            </p>
-            <p>
-                Improved understanding of investigative processes and the role
-                of cybersecurity techniques in law enforcement contexts.
-            </p>
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Internship Experience</h2>
+            <div class="timeline">
+                <article class="timeline-item panel">
+                    <p class="duration">Jun 2025 - Jul 2025</p>
+                    <h3>Cybersecurity Intern - Hackup Technologies</h3>
+                    <ul>
+                        <li>Assessed 5+ test web applications using OWASP-based techniques.</li>
+                        <li>Documented 10+ misconfigurations and analyzed abnormal traffic using Wireshark.</li>
+                    </ul>
+                </article>
+                <article class="timeline-item panel">
+                    <p class="duration">Jun 2025 - Aug 2025</p>
+                    <h3>Cybercrime Investigation Intern - Tamil Nadu Cybercrime Unit</h3>
+                    <ul>
+                        <li>Supported analysis of 15+ fraud cases and 5,000+ transaction records.</li>
+                        <li>Assisted domain intelligence correlation and evidence-focused reporting.</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="grid project-grid">
+                <article class="panel project-card">
+                    <h3>PortGuardian</h3>
+                    <p>Real-time <span class="kw-green">port monitoring</span> and automated alert workflow for SOC-style checks.</p>
+                    <p class="stack">Python | Monitoring</p>
+                    <a href="https://github.com/YOUR-GITHUB-USERNAME/portguardian" target="_blank" rel="noopener noreferrer">View Project</a>
+                </article>
+                <article class="panel project-card">
+                    <h3>DNS Recon & Vulnerability Mapper</h3>
+                    <p>Collects DNS records, fingerprints services, and supports <span class="kw-blue">CVE mapping</span>.</p>
+                    <p class="stack">Python | DNS | WhatWeb</p>
+                    <a href="https://github.com/YOUR-GITHUB-USERNAME/dns-record-finder" target="_blank" rel="noopener noreferrer">View Project</a>
+                </article>
+                <article class="panel project-card">
+                    <h3>CyberSentinel</h3>
+                    <p>Unified framework for <span class="kw-green">network signals</span>, service enumeration, and detection insights.</p>
+                    <p class="stack">Python | Threat Detection</p>
+                    <a href="https://github.com/YOUR-GITHUB-USERNAME/cybersentinel" target="_blank" rel="noopener noreferrer">View Project</a>
+                </article>
+                <article class="panel project-card">
+                    <h3>FundTrail</h3>
+                    <p>Flask-SQLite workflow for tracing multi-layered financial transactions in cybercrime cases.</p>
+                    <p class="stack">Flask | SQLite</p>
+                    <a href="https://github.com/YOUR-GITHUB-USERNAME/fundtrail" target="_blank" rel="noopener noreferrer">View Project</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="credentials" class="section">
+        <div class="container">
+            <h2>Credentials</h2>
+            <div class="grid two-col">
+                <article class="panel mini-list">
+                    <h3>Certifications & Workshops</h3>
+                    <ul>
+                        <li>DRDO Workshop - Cyber Threat Detection Using Deep Learning</li>
+                        <li>CSIR Seminar - In-Vehicle Intrusion Detection Systems</li>
+                        <li>Smart India Hackathon (SIH) 2024</li>
+                    </ul>
+                </article>
+                <article class="panel mini-list">
+                    <h3>Research</h3>
+                    <ul>
+                        <li>IEEE RICE-2025 - Ransomware in Healthcare</li>
+                        <li>2nd International Conference (UAE) - Ransomware in Healthcare</li>
+                        <li>Languages: English (Professional), Tamil (Native)</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <article class="panel contact-info compact">
+                <p><strong>Name:</strong> Bharathkumar N</p>
+                <p><strong>Email:</strong> bharathkumarnatarajan6@gmail.com</p>
+                <p><strong>Phone:</strong> +91 9344128641</p>
+                <p><strong>Location:</strong> Avinashi, Tiruppur, Tamil Nadu</p>
+                <p><strong>LinkedIn:</strong> Add your profile link</p>
+                <p><strong>Soft Skills:</strong> Problem Solving, Analytical Thinking, Team Collaboration</p>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-wrap">
+        <div>
+            <h3>Bharathkumar N</h3>
+            <p>Cybersecurity Undergraduate</p>
+        </div>
+        <div class="footer-links">
+            <a href="mailto:bharathkumarnatarajan6@gmail.com">Email</a>
+            <a href="#contact">Contact</a>
+            <a href="resume.pdf" download>Download CV</a>
         </div>
     </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-    <div class="container">
-        <h2>Contact</h2>
-        <p>Email: bharathkumarnatarajan6@gmail.com</p>
-        <p>Phone: 9344128641</p>
-        <p>Location: Avinashi, Tiruppur, Tamil Nadu</p>
-    </div>
-</section>
-
-<footer>
-    © 2026 Bharathkumar N
 </footer>
 
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
 </body>
 </html>
-
