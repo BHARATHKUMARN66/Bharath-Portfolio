@@ -3,224 +3,545 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bharathkumar N - Cybersecurity undergraduate portfolio.">
     <title>Bharathkumar N | Cybersecurity Portfolio</title>
-
-    <link rel="preload" as="image" href="assets/bg.webp">
-    <link rel="preload" as="image" href="assets/profile.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="bg-layer"></div>
 
-<header class="site-header">
-    <div class="container nav-wrap">
-        <a href="#home" class="brand">Bharath<span>.sec</span></a>
-        <nav aria-label="Primary navigation">
-            <ul class="nav-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#credentials">Credentials</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <a href="resume.pdf" class="btn btn-outline" download>Download CV</a>
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+    <div class="container nav-flex">
+        <a href="#" class="logo">
+            <span class="logo-bracket">[</span>Bharath<span class="logo-bracket">]</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="hero">
+    <div class="hero-bg-lines"></div>
+    <div class="container hero-grid">
+        <div class="hero-text" data-reveal>
+            <div class="hero-tag">
+                <span class="dot pulse"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-name">Bharathkumar<br><span class="accent">N</span></h1>
+            <p class="role">
+                <span class="type-prefix">$ </span>
+                <span class="typewriter" id="typewriter" aria-live="polite"></span><span class="cursor-blink">_</span>
+            </p>
+            <p class="tagline">
+                Aspiring cybersecurity professional specializing in <span class="kw-secondary">network security</span>,
+                ethical hacking, and cybercrime investigation. Building real-world
+                skills through hands-on tools and research.
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
+                    View Projects
+                </a>
+                <a href="resume.pdf" class="btn outline" download>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                    Resume
+                </a>
+            </div>
+            <div class="social-row">
+                <a href="https://github.com/BHARATHKUMARN66" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/bharath-kumar-n-8904512a1" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                <a href="mailto:bharathkumarnatarajan6@gmail.com" class="social-link" aria-label="Email">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-visual" data-reveal data-delay="180">
+            <div class="profile-wrapper">
+                <div class="profile-frame">
+                    <img src="profile.png" alt="Bharathkumar N" width="300" height="380" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-hint">
+        <span>scroll</span>
+        <div class="scroll-arrow"></div>
     </div>
 </header>
 
-<main id="home">
-    <section class="hero section">
-        <div class="container hero-grid">
-            <div class="hero-copy">
-                <p class="kicker">Professional Portfolio</p>
-                <h1>Bharathkumar N</h1>
-                <p class="role">CSE (Cybersecurity) Undergraduate</p>
-                <p class="lead">
-                    Focused on <span class="kw-green">network security</span>, <span class="kw-blue">threat detection</span>,
-                    and <span class="kw-green">SOC monitoring</span> using Python, Linux, DNS analysis, and service enumeration.
-                    Seeking SOC Analyst or Detection Engineering opportunities.
+<!-- ABOUT -->
+<section id="about" class="section boot-section">
+    <div class="container">
+        <div class="section-header boot-header">
+            <span class="section-num">01</span>
+            <h2 class="section-title">About Me</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-text boot-item">
+                <ul class="about-highlights">
+                    <li>Computer Science student specializing in <span class="kw-secondary">cybersecurity</span> with a defense-first mindset.</li>
+                    <li>Strong <span class="kw-teal">Linux</span> and networking fundamentals built through coursework and hands-on practice.</li>
+                    <li>Practical exposure to tools like <span class="kw-primary">Nmap</span>, <span class="kw-primary">Burp Suite</span>, Metasploit, and WhatWeb.</li>
+                    <li>Project-driven learning style focused on building, testing, and improving real workflows.</li>
+                    <li>Current focus on <span class="kw-secondary">threat detection</span>, security monitoring, and cybercrime investigation.</li>
+                </ul>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card boot-item">
+                    <span class="stat-num">3+</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-card boot-item">
+                    <span class="stat-num">2</span>
+                    <span class="stat-label">Internships</span>
+                </div>
+                <div class="stat-card boot-item">
+                    <span class="stat-num">4+</span>
+                    <span class="stat-label">Security Tools</span>
+                </div>
+                <div class="stat-card boot-item">
+                    <span class="stat-num">∞</span>
+                    <span class="stat-label">Curiosity</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section dark boot-section">
+    <div class="container">
+        <div class="section-header boot-header">
+            <span class="section-num">02</span>
+            <h2 class="section-title">Skills</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card boot-item">
+                <div class="skill-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <h3>Programming & Scripting</h3>
+                <p><span class="kw-teal">Python</span> for automation, data processing, and building security-focused CLI utilities.</p>
+                <div class="tag-row">
+                    <span class="tag kw-teal">Python</span>
+                    <span class="tag">Bash</span>
+                    <span class="tag">Scripting</span>
+                </div>
+            </div>
+
+            <div class="skill-card boot-item">
+                <div class="skill-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                </div>
+                <h3>System & Network</h3>
+                <p>Solid grasp of Linux environments, TCP/IP stack, DNS, port management, and packet flow.</p>
+                <div class="tag-row">
+                    <span class="tag kw-teal">Linux</span>
+                    <span class="tag kw-teal">TCP/IP</span>
+                    <span class="tag kw-teal">DNS</span>
+                    <span class="tag">Networking</span>
+                </div>
+            </div>
+
+            <div class="skill-card boot-item">
+                <div class="skill-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Security Tools</h3>
+                <p>Hands-on experience with industry-standard reconnaissance and vulnerability tooling.</p>
+                <div class="tag-row">
+                    <span class="tag kw-primary">Nmap</span>
+                    <span class="tag kw-primary">Burp Suite</span>
+                    <span class="tag kw-primary">Metasploit</span>
+                    <span class="tag kw-primary">WhatWeb</span>
+                </div>
+            </div>
+
+            <div class="skill-card boot-item">
+                <div class="skill-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </div>
+                <h3>Security Concepts</h3>
+                <p><span class="kw-secondary">Vulnerability scanning</span>, recon methodology, ethical hacking fundamentals, and SIEM alerting.</p>
+                <div class="tag-row">
+                    <span class="tag">OSINT</span>
+                    <span class="tag">Recon</span>
+                    <span class="tag">CVE Analysis</span>
+                    <span class="tag">SIEM</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section boot-section">
+    <div class="container">
+        <div class="section-header boot-header">
+            <span class="section-num">03</span>
+            <h2 class="section-title">Projects</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card boot-item">
+                <div class="project-top">
+                    <div class="project-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </div>
+                    <a href="https://github.com/BHARATHKUMARN66" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="GitHub">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+                <h3>PortGuardian</h3>
+                <p class="project-sub">Port Monitoring Tool</p>
+                <ul class="project-desc">
+                    <li>Monitors open ports on the host system and records baseline service exposure.</li>
+                    <li>Detects unauthorized port-state changes using repeated <span class="kw-secondary">reconnaissance</span> comparisons.</li>
+                    <li>Generates timestamped logs and alerts for faster monitoring response.</li>
+                </ul>
+                <div class="tag-row">
+                    <span class="tag accent-tag kw-teal">Python</span>
+                    <span class="tag">Networking</span>
+                    <span class="tag">Security Monitoring</span>
+                </div>
+            </div>
+
+            <div class="project-card boot-item">
+                <div class="project-top">
+                    <div class="project-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </div>
+                    <a href="https://github.com/BHARATHKUMARN66" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="GitHub">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+                <h3>DNS Record Finder</h3>
+                <p class="project-sub">Bug Bounty Recon Tool</p>
+                <ul class="project-desc">
+                    <li>Enumerates A, MX, TXT, and CNAME <span class="kw-teal">DNS</span> records for target domains.</li>
+                    <li>Maps domain-level attack surface to support recon and triage workflows.</li>
+                    <li>Surfaces configuration clues useful for bug bounty and assessment prep.</li>
+                </ul>
+                <div class="tag-row">
+                    <span class="tag accent-tag kw-teal">Python</span>
+                    <span class="tag kw-teal">DNS</span>
+                    <span class="tag kw-secondary">Reconnaissance</span>
+                </div>
+            </div>
+
+            <div class="project-card boot-item">
+                <div class="project-top">
+                    <div class="project-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 6v16l7-4 8 4 7-4V2l-7 4-8-4-7 4z"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+                    </div>
+                    <a href="https://github.com/BHARATHKUMARN66" target="_blank" rel="noopener noreferrer" class="project-github" aria-label="GitHub">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                </div>
+                <h3>CyberSentinel</h3>
+                <p class="project-sub">Monitoring System</p>
+                <ul class="project-desc">
+                    <li>Tracks network and application signals to identify exposed services early.</li>
+                    <li>Flags abnormal behavior patterns for <span class="kw-secondary">threat detection</span> and investigation.</li>
+                    <li>Supports analyst review with consistent monitoring outputs.</li>
+                </ul>
+                <div class="tag-row">
+                    <span class="tag accent-tag kw-teal">Python</span>
+                    <span class="tag kw-teal">Monitoring</span>
+                    <span class="tag">Security Analysis</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section dark boot-section">
+    <div class="container">
+        <div class="section-header boot-header">
+            <span class="section-num">04</span>
+            <h2 class="section-title">Experience</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item boot-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Cybersecurity Intern</h3>
+                            <p class="exp-company"><span class="kw-primary">Hackup Technologies</span></p>
+                        </div>
+                        <span class="exp-badge">Internship</span>
+                    </div>
+                    <ul class="exp-desc">
+                        <li>Performed <span class="kw-secondary">vulnerability scanning</span> across target assets to identify exposure points.</li>
+                        <li>Supported <span class="kw-secondary">network security</span> analysis using structured assessment workflows.</li>
+                        <li>Documented findings in professional reports and learned remediation communication.</li>
+                    </ul>
+                    <div class="tag-row">
+                        <span class="tag kw-secondary">Vulnerability Scanning</span>
+                        <span class="tag kw-secondary">Network Security</span>
+                        <span class="tag">Reporting</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item boot-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Cybercrime Investigation Intern</h3>
+                            <p class="exp-company"><span class="kw-primary">Cybercrime Investigation Unit</span></p>
+                        </div>
+                        <span class="exp-badge">Internship</span>
+                    </div>
+                    <ul class="exp-desc">
+                        <li>Assisted investigations with digital fund-flow tracking and evidence gathering.</li>
+                        <li>Monitored suspicious domains and mapped supporting <span class="kw-secondary">reconnaissance</span> indicators for case work.</li>
+                        <li>Applied cybersecurity investigation methods in law-enforcement workflows.</li>
+                    </ul>
+                    <div class="tag-row">
+                        <span class="tag">OSINT</span>
+                        <span class="tag">Digital Forensics</span>
+                        <span class="tag">Domain Monitoring</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section boot-section">
+    <div class="container">
+        <div class="section-header boot-header">
+            <span class="section-num">05</span>
+            <h2 class="section-title">Contact</h2>
+            <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-text boot-item">
+                <h3>Let's Connect</h3>
+                <p>
+                    Open to internships, cybersecurity roles, and collaborations on
+                    security research or tooling. Feel free to reach out.
                 </p>
-                <div class="hero-tags" aria-label="Core focus areas">
-                    <span class="tag">Threat Monitoring</span>
-                    <span class="tag">Network Security</span>
-                    <span class="tag">Linux</span>
-                    <span class="tag">Incident Response</span>
+                <a href="mailto:bharathkumarnatarajan6@gmail.com" class="btn outline contact-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    Send a Message
+                </a>
+            </div>
+
+            <div class="contact-cards">
+                <a href="mailto:bharathkumarnatarajan6@gmail.com" class="contact-card boot-item">
+                    <div class="contact-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div class="contact-copy">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-val">bharathkumarnatarajan6@gmail.com</span>
+                    </div>
+                </a>
+
+                <a href="tel:+919344128641" class="contact-card boot-item">
+                    <div class="contact-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.4h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.09 6.09l1.96-1.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.02z"/></svg>
+                    </div>
+                    <div class="contact-copy">
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-val">+91 93441 28641</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/BHARATHKUMARN66" target="_blank" rel="noopener noreferrer" class="contact-card external-card boot-item">
+                    <div class="contact-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                    </div>
+                    <div class="contact-copy">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-val kw-link">@BHARATHKUMARN66</span>
+                        <span class="contact-subtext">github.com/BHARATHKUMARN66</span>
+                    </div>
+                    <span class="contact-card-arrow" aria-hidden="true">↗</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/bharath-kumar-n-8904512a1" target="_blank" rel="noopener noreferrer" class="contact-card external-card boot-item">
+                    <div class="contact-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </div>
+                    <div class="contact-copy">
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-val">Bharathkumar N</span>
+                        <span class="contact-subtext">linkedin.com/in/bharath-kumar-n-8904512a1</span>
+                    </div>
+                    <span class="contact-card-arrow" aria-hidden="true">↗</span>
+                </a>
+
+                <div class="contact-card no-hover boot-item">
+                    <div class="contact-card-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div class="contact-copy">
+                        <span class="contact-label">Location</span>
+                        <span class="contact-val">Avinashi, Tiruppur, Tamil Nadu</span>
+                    </div>
                 </div>
-                <p class="meta-line">Avinashi, Tamil Nadu | bharathkumarnatarajan6@gmail.com | +91 9344128641 | LinkedIn</p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-ghost">Contact Me</a>
-                </div>
-            </div>
-            <div class="hero-image-wrap">
-                <img src="assets/profile.png" alt="Bharathkumar N" class="hero-image" loading="lazy">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About</h2>
-            <div class="grid two-col about-grid">
-                <article class="panel">
-                    <p>
-                        Cybersecurity engineering student with strong fundamentals in
-                        <span class="kw-blue">TCP/IP</span>, <span class="kw-green">vulnerability assessment</span>, and
-                        <span class="kw-blue">Linux CLI</span>. Practical exposure in monitoring and investigation workflows.
-                    </p>
-                </article>
-                <article class="panel mini-list">
-                    <h3>Education</h3>
-                    <p><strong>Dr. N.G.P. Institute of Technology</strong></p>
-                    <p>B.E. CSE (Cybersecurity), 2023-2027</p>
-                    <p>CGPA: 8.42 | HSC: 88.3%</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="grid two-col">
-                <article class="panel skill-card">
-                    <h3><i data-lucide="code-2"></i> Languages</h3>
-                    <p>Python, Java, SQL</p>
-                </article>
-                <article class="panel skill-card">
-                    <h3><i data-lucide="shield"></i> Security</h3>
-                    <p>Vulnerability Assessment, Log Analysis, Threat Detection, Incident Triage</p>
-                </article>
-                <article class="panel skill-card">
-                    <h3><i data-lucide="network"></i> Networking</h3>
-                    <p>Linux (CLI), TCP/IP, DNS, Ports & Services, Traffic Analysis</p>
-                </article>
-                <article class="panel skill-card">
-                    <h3><i data-lucide="wrench"></i> Tools</h3>
-                    <p>Nmap, Burp Suite, Metasploit, WhatWeb, Wireshark</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <div class="container">
-            <h2>Internship Experience</h2>
-            <div class="timeline">
-                <article class="timeline-item panel">
-                    <p class="duration">Jun 2025 - Jul 2025</p>
-                    <h3>Cybersecurity Intern - Hackup Technologies</h3>
-                    <ul>
-                        <li>Assessed 5+ test web applications using OWASP-based techniques.</li>
-                        <li>Documented 10+ misconfigurations and analyzed abnormal traffic using Wireshark.</li>
-                    </ul>
-                </article>
-                <article class="timeline-item panel">
-                    <p class="duration">Jun 2025 - Aug 2025</p>
-                    <h3>Cybercrime Investigation Intern - Tamil Nadu Cybercrime Unit</h3>
-                    <ul>
-                        <li>Supported analysis of 15+ fraud cases and 5,000+ transaction records.</li>
-                        <li>Assisted domain intelligence correlation and evidence-focused reporting.</li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="grid project-grid">
-                <article class="panel project-card">
-                    <h3>PortGuardian</h3>
-                    <p>Real-time <span class="kw-green">port monitoring</span> and automated alert workflow for SOC-style checks.</p>
-                    <p class="stack">Python | Monitoring</p>
-                    <a href="https://github.com/YOUR-GITHUB-USERNAME/portguardian" target="_blank" rel="noopener noreferrer">View Project</a>
-                </article>
-                <article class="panel project-card">
-                    <h3>DNS Recon & Vulnerability Mapper</h3>
-                    <p>Collects DNS records, fingerprints services, and supports <span class="kw-blue">CVE mapping</span>.</p>
-                    <p class="stack">Python | DNS | WhatWeb</p>
-                    <a href="https://github.com/YOUR-GITHUB-USERNAME/dns-record-finder" target="_blank" rel="noopener noreferrer">View Project</a>
-                </article>
-                <article class="panel project-card">
-                    <h3>CyberSentinel</h3>
-                    <p>Unified framework for <span class="kw-green">network signals</span>, service enumeration, and detection insights.</p>
-                    <p class="stack">Python | Threat Detection</p>
-                    <a href="https://github.com/YOUR-GITHUB-USERNAME/cybersentinel" target="_blank" rel="noopener noreferrer">View Project</a>
-                </article>
-                <article class="panel project-card">
-                    <h3>FundTrail</h3>
-                    <p>Flask-SQLite workflow for tracing multi-layered financial transactions in cybercrime cases.</p>
-                    <p class="stack">Flask | SQLite</p>
-                    <a href="https://github.com/YOUR-GITHUB-USERNAME/fundtrail" target="_blank" rel="noopener noreferrer">View Project</a>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="credentials" class="section">
-        <div class="container">
-            <h2>Credentials</h2>
-            <div class="grid two-col">
-                <article class="panel mini-list">
-                    <h3>Certifications & Workshops</h3>
-                    <ul>
-                        <li>DRDO Workshop - Cyber Threat Detection Using Deep Learning</li>
-                        <li>CSIR Seminar - In-Vehicle Intrusion Detection Systems</li>
-                        <li>Smart India Hackathon (SIH) 2024</li>
-                    </ul>
-                </article>
-                <article class="panel mini-list">
-                    <h3>Research</h3>
-                    <ul>
-                        <li>IEEE RICE-2025 - Ransomware in Healthcare</li>
-                        <li>2nd International Conference (UAE) - Ransomware in Healthcare</li>
-                        <li>Languages: English (Professional), Tamil (Native)</li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <article class="panel contact-info compact">
-                <p><strong>Name:</strong> Bharathkumar N</p>
-                <p><strong>Email:</strong> bharathkumarnatarajan6@gmail.com</p>
-                <p><strong>Phone:</strong> +91 9344128641</p>
-                <p><strong>Location:</strong> Avinashi, Tiruppur, Tamil Nadu</p>
-                <p><strong>LinkedIn:</strong> Add your profile link</p>
-                <p><strong>Soft Skills:</strong> Problem Solving, Analytical Thinking, Team Collaboration</p>
-            </article>
-        </div>
-    </section>
-</main>
-
-<footer class="footer">
-    <div class="container footer-wrap">
-        <div>
-            <h3>Bharathkumar N</h3>
-            <p>Cybersecurity Undergraduate</p>
-        </div>
+<!-- FOOTER -->
+<footer>
+    <div class="container footer-inner">
+        <span class="logo"><span class="logo-bracket">[</span>Bharath<span class="logo-bracket">]</span></span>
+        <span class="footer-copy">Designed & Built by Bharathkumar N · © 2026</span>
         <div class="footer-links">
-            <a href="mailto:bharathkumarnatarajan6@gmail.com">Email</a>
-            <a href="#contact">Contact</a>
-            <a href="resume.pdf" download>Download CV</a>
+            <a href="https://github.com/BHARATHKUMARN66" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/bharath-kumar-n-8904512a1" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
         </div>
     </div>
 </footer>
 
-<script src="https://unpkg.com/lucide@latest"></script>
 <script>
-    lucide.createIcons();
+/* === TYPEWRITER EFFECT === */
+const roles = [
+    "Cybersecurity Student",
+    "Ethical Hacking Enthusiast",
+    "Network Security Explorer",
+    "Cybercrime Investigator",
+    "Python Security Developer"
+];
+let ri = 0, ci = 0, deleting = false;
+const tw = document.getElementById("typewriter");
+
+function type() {
+    const current = roles[ri];
+    if (!deleting) {
+        tw.textContent = current.slice(0, ++ci);
+        if (ci === current.length) { deleting = true; setTimeout(type, 1800); return; }
+    } else {
+        tw.textContent = current.slice(0, --ci);
+        if (ci === 0) { deleting = false; ri = (ri + 1) % roles.length; }
+    }
+    setTimeout(type, deleting ? 45 : 80);
+}
+type();
+
+/* === SCROLL REVEAL === */
+const reveals = document.querySelectorAll(".hero [data-reveal]");
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            const delay = e.target.dataset.delay || 0;
+            setTimeout(() => e.target.classList.add("revealed"), +delay);
+        }
+    });
+}, { threshold: 0.12 });
+reveals.forEach(el => observer.observe(el));
+
+/* === SECTION BOOT REVEAL === */
+const bootSections = document.querySelectorAll(".boot-section");
+let lastBootScrollY = window.scrollY;
+let isBootScrollingDown = true;
+
+window.addEventListener("scroll", () => {
+    const currentY = window.scrollY;
+    isBootScrollingDown = currentY > lastBootScrollY;
+    lastBootScrollY = currentY;
+}, { passive: true });
+
+const bootObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting || !isBootScrollingDown) return;
+
+        const section = entry.target;
+        const bootItems = section.querySelectorAll(".boot-item");
+        bootItems.forEach((item, idx) => {
+            item.style.setProperty("--boot-delay", `${320 + (idx * 100)}ms`);
+        });
+
+        // Replay boot animation each time section enters viewport.
+        if (section.classList.contains("booted")) {
+            section.classList.remove("booted");
+            void section.offsetWidth;
+        }
+
+        section.classList.add("booted");
+    });
+}, { threshold: 0.3, rootMargin: "0px 0px -8% 0px" });
+
+bootSections.forEach(section => bootObserver.observe(section));
+
+/* === NAVBAR SCROLL === */
+const navbar = document.getElementById("navbar");
+window.addEventListener("scroll", () => {
+    navbar.classList.toggle("scrolled", window.scrollY > 60);
+});
+
+/* === ACTIVE NAV LINK === */
+const sections = document.querySelectorAll("section[id], header[id]");
+const navLinks = document.querySelectorAll(".nav-link");
+window.addEventListener("scroll", () => {
+    let cur = "";
+    sections.forEach(s => {
+        if (window.scrollY >= s.offsetTop - 120) cur = s.id;
+    });
+    navLinks.forEach(a => {
+        a.classList.toggle("active", a.getAttribute("href") === "#" + cur);
+    });
+});
+
+/* === HAMBURGER MENU === */
+const ham = document.getElementById("hamburger");
+const navL = document.getElementById("navLinks");
+ham.addEventListener("click", () => {
+    const isOpen = ham.classList.toggle("open");
+    navL.classList.toggle("open");
+    ham.setAttribute("aria-expanded", String(isOpen));
+});
+navL.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", () => {
+        ham.classList.remove("open");
+        navL.classList.remove("open");
+        ham.setAttribute("aria-expanded", "false");
+    });
+});
 </script>
+
 </body>
 </html>
